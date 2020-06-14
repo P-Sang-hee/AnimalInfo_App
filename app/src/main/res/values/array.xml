@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="whyusehos">
+        <item>진료</item>
+        <item>수술</item>
+        <item>검진</item>
+        <item>접종</item>
+        <item>기타</item>
+    </string-array>
+
+    <string-array name="neutral">
+        <item>중성화 함</item>
+        <item>중성화 하지 않음</item>
+        <item>중성화 여부 알 수 없음</item>
+        <item>중성화 불가능</item>
+    </string-array>
+</resources>

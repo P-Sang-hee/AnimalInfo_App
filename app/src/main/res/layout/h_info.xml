@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/hospitalname_textV"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="130dp"
+                android:text="병원명"
+                android:textAlignment="viewStart"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/input_hospitalname"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="20dp"
+                android:ems="10"
+                android:hint="동물 병원의 이름을 입력하세요."
+                android:inputType="textPersonName"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/visit_textV"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="20dp"
+                android:text="방문 날짜"
+                android:textAlignment="viewStart"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/input_Visit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="20dp"
+                android:ems="10"
+                android:hint="방문한 날짜를 입력하세요."
+                android:inputType="date" />
+
+            <TextView
+                android:id="@+id/animal_textV"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="20dp"
+                android:text="동물 종류"
+                android:textAlignment="viewStart"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/input_animal"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:ems="10"
+                android:hint="진료받은 동물의 종류를 입력하세요."
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/whyuse_textV"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="130dp"
+                android:text="이용 사유"
+                android:textAlignment="viewStart"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/whyuse"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginBottom="20dp"
+                android:entries="@array/whyusehos" />
+
+            <TextView
+                android:id="@+id/cost_textV"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="130dp"
+                android:text="비용"
+                android:textAlignment="viewStart"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/input_cost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginBottom="20dp"
+                android:ems="10"
+                android:hint="비용을 입력하세요."
+                android:inputType="number" />
+
+            <TextView
+                android:id="@+id/Other_textV"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="31dp"
+                android:layout_marginEnd="130dp"
+                android:text="기타"
+                android:textAlignment="viewStart"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/input_Other"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="20dp"
+                android:ems="10"
+                android:hint="추가로 입력하고자 하는 내용을 입력하세요."
+                android:inputType="textPersonName" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <Button
+                    android:id="@+id/saveB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginEnd="40dp"
+                    android:layout_marginBottom="50dp"
+                    android:text="저장" />
+
+                <Button
+                    android:id="@+id/shareB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="40dp"
+                    android:layout_marginBottom="50dp"
+                    android:text="공유" />
+
+                <Button
+                    android:id="@+id/cancleB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginBottom="50dp"
+                    android:text="취소" />
+            </TableRow>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
