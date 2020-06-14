@@ -35,3 +35,9 @@ q
 Aapp/src/main/java/com/humita/animalinfo/h_info_list_Activity.java,2\c\2c118998bccc1bee94639fcbb5bc9ba877c23b5f
 o
 ?app/src/main/java/com/humita/animalinfo/priv_info_Activity.java,d\a\da89686f7b00dda4f8abba30f10323f837897f87
+L
+.idea/codeStyles/Project.xml,6\e\6ecd6000a7b6f4a2884412ff19f74193ed089648
+S
+#.idea/sonarlint/issuestore/index.pb,9\f\9fe84ebb15faf917b7def6236dba604453cc61e0
+Q
+!app/src/main/res/values/array.xml,6\8\68e8648bf36e35d7bac78acfa799d4aa21beb246

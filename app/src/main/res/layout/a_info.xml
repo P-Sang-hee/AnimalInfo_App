@@ -1,142 +1,140 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--반려동물 정보등록 화면-->
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <Spinner
-        android:id="@+id/spinner"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="29dp"
-        android:entries="@array/neutral"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTextMultiLine2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.886"
-        app:layout_constraintStart_toStartOf="parent" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-    <ImageView
-        android:id="@+id/Selectimg_animal"
-        android:layout_width="160dp"
-        android:layout_height="160dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="13dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/input_animalName"
-        app:srcCompat="@android:drawable/ic_menu_report_image" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
 
-    <EditText
-        android:id="@+id/editTextTextPersonName10"
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="9dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="13dp"
-        android:ems="10"
-        android:hint="성별 입력"
-        android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/spinner"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/editTextTextPersonName8" />
+            <EditText
+                android:id="@+id/input_animalName"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:ems="10"
+                android:hint="반려동물의 이름을 입력하세요."
+                android:inputType="textPersonName" />
 
-    <EditText
-        android:id="@+id/input_animalName"
-        android:layout_width="250dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:ems="10"
-        android:hint="반려동물의 이름을 입력하세요."
-        android:inputType="textPersonName"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="10dp">
 
-    <Button
-        android:id="@+id/cancleB"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="89dp"
-        android:layout_marginEnd="92dp"
-        android:layout_marginBottom="52dp"
-        android:text="취소"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/saveB" />
+                <ImageView
+                    android:id="@+id/Selectimg_animal"
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    app:srcCompat="@android:drawable/ic_menu_report_image" />
 
-    <EditText
-        android:id="@+id/editTextTextPersonName7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="6dp"
-        android:ems="10"
-        android:hint="동물의 종류를 입력하세요."
-        android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName10"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/Selectimg_animal"
-        app:layout_constraintTop_toBottomOf="@+id/input_animalName"
-        app:layout_constraintVertical_bias="0.0" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
 
-    <EditText
-        android:id="@+id/editTextTextPersonName8"
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="4dp"
-        android:ems="10"
-        android:hint="나이 입력"
-        android:inputType="number|textPersonName"
-        app:layout_constraintStart_toEndOf="@+id/Selectimg_animal"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName7" />
+                    <EditText
+                        android:id="@+id/input_animalkind"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:ems="10"
+                        android:hint="동물의 종류를 입력하세요."
+                        android:inputType="textPersonName" />
 
-    <Button
-        android:id="@+id/saveB"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="68dp"
-        android:layout_marginEnd="55dp"
-        android:layout_marginBottom="52dp"
-        android:text="저장"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@id/cancleB"
-        app:layout_constraintStart_toStartOf="parent" />
+                    <Spinner
+                        android:id="@+id/spinner"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginBottom="10dp"
+                        android:entries="@array/neutral" />
 
-    <EditText
-        android:id="@+id/editTextTextMultiLine"
-        android:layout_width="382dp"
-        android:layout_height="120dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="13dp"
-        android:layout_marginBottom="4dp"
-        android:ems="10"
-        android:gravity="start|top"
-        android:hint="반려동물에 대해 기록하고자 하는 내용을 자유롭게 기입하여 주십시오."
-        android:inputType="textMultiLine"
-        app:layout_constraintBottom_toTopOf="@+id/cancleB"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginBottom="10dp">
 
-    <EditText
-        android:id="@+id/editTextTextMultiLine2"
-        android:layout_width="382dp"
-        android:layout_height="120dp"
-        android:layout_marginStart="12dp"
-        android:layout_marginEnd="17dp"
-        android:layout_marginBottom="8dp"
-        android:ems="10"
-        android:gravity="start|top"
-        android:hint="그동안 받은 예방 접종이나 수술 목록 등을 자유롭게 기입하여 주십시오."
-        android:inputType="textMultiLine"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTextMultiLine"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+                        <EditText
+                            android:id="@+id/input_animalold"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:hint="나이 입력"
+                            android:inputType="number|textPersonName" />
+
+                        <EditText
+                            android:id="@+id/input_animalsex"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:ems="10"
+                            android:hint="성별 입력"
+                            android:inputType="textPersonName" />
+                    </TableRow>
+
+                </LinearLayout>
+            </TableRow>
+
+            <EditText
+                android:id="@+id/input_animaltreatment"
+                android:layout_width="382dp"
+                android:layout_height="120dp"
+                android:layout_marginLeft="20dp"
+                android:ems="10"
+                android:gravity="start|top"
+                android:hint="그동안 받은 예방 접종이나 수술 목록 등을 자유롭게 기입하여 주십시오."
+                android:inputType="textMultiLine"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <EditText
+                android:id="@+id/input_animalother"
+                android:layout_width="382dp"
+                android:layout_height="120dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="10dp"
+                android:ems="10"
+                android:gravity="start|top"
+                android:hint="반려동물에 대해 기록하고자 하는 내용을 자유롭게 기입하여 주십시오."
+                android:inputType="textMultiLine" />
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="20dp">
+
+                <Button
+                    android:id="@+id/saveB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="60dp"
+                    android:text="저장" />
+
+                <Button
+                    android:id="@+id/cancleB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="60dp"
+                    android:text="취소" />
+            </TableRow>
+
+        </LinearLayout>
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

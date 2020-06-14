@@ -7,123 +7,130 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <ImageButton
-        android:id="@+id/i_A_info"
-        android:layout_width="125dp"
-        android:layout_height="125dp"
-        android:layout_marginStart="86dp"
-        android:layout_marginTop="96dp"
-        android:layout_marginEnd="47dp"
-        android:scaleType="centerInside"
-        android:background="#00ff0000"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/i_AHos_info"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/study"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/Pri_info"
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="111dp"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="56dp"
-        android:layout_marginBottom="76dp"
-        android:text="개인정보 확인"
-        android:textAlignment="center"
-        android:textSize="22sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/OLHos_info"
-        app:layout_constraintTop_toBottomOf="@+id/i_Pri_info"
-        app:layout_constraintVertical_bias="0.0"
-        tools:text="개인정보 확인" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="60dp"
+            android:orientation="horizontal">
 
-    <ImageButton
-        android:id="@+id/i_AHos_info"
-        android:layout_width="125dp"
-        android:layout_height="125dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="96dp"
-        android:scaleType="centerInside"
-        android:background="#00ff0000"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/hospital" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
 
-    <ImageButton
-        android:id="@+id/i_Pri_info"
-        android:layout_width="125dp"
-        android:layout_height="125dp"
-        android:layout_marginStart="84dp"
-        android:layout_marginTop="28dp"
-        android:layout_marginEnd="24dp"
-        android:scaleType="centerInside"
-        android:background="#00ff0000"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.162"
-        app:layout_constraintStart_toEndOf="@+id/i_aHos_info"
-        app:layout_constraintTop_toBottomOf="@+id/A_info"
-        app:srcCompat="@drawable/metal_gear" />
+                <ImageButton
+                    android:id="@+id/i_AHos_info"
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
+                    android:background="#00ff0000"
+                    android:scaleType="centerInside"
+                    app:srcCompat="@drawable/hospital" />
 
-    <TextView
-        android:id="@+id/A_info"
-        android:layout_width="90dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="50dp"
-        android:layout_marginBottom="28dp"
-        android:text="반려동물정보등록"
-        android:textAlignment="center"
-        android:textSize="22sp"
-        app:layout_constraintBottom_toTopOf="@+id/i_Pri_info"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/AHos_info"
-        app:layout_constraintTop_toBottomOf="@+id/i_A_info"
-        tools:text="반려동물정보등록" />
+                <TextView
+                    android:id="@+id/AHos_info"
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:text="동물병원정보등록"
+                    android:textAlignment="center"
+                    android:textSize="22sp"
+                    tools:text="동물병원정보등록" />
+            </LinearLayout>
 
-    <TextView
-        android:id="@+id/AHos_info"
-        android:layout_width="90dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="44dp"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="121dp"
-        android:layout_marginBottom="32dp"
-        android:text="동물병원정보등록"
-        android:textAlignment="center"
-        android:textSize="22sp"
-        app:layout_constraintBottom_toTopOf="@+id/i_aHos_info"
-        app:layout_constraintEnd_toStartOf="@+id/A_info"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/i_AHos_info"
-        tools:text="동물병원정보등록" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/OLHos_info"
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="48dp"
-        android:layout_marginTop="12dp"
-        android:text="우리 지역 동물 병원 정보 찾기"
-        android:textAlignment="center"
-        android:textSize="22sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/i_aHos_info"
-        tools:text="우리 지역 동물 병원 정보 찾기" />
+                <ImageButton
+                    android:id="@+id/i_A_info"
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
+                    android:background="#00ff0000"
+                    android:scaleType="centerInside"
+                    app:srcCompat="@drawable/study" />
 
-    <ImageButton
-        android:id="@+id/i_aHos_info"
-        android:layout_width="125dp"
-        android:layout_height="125dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="32dp"
-        android:scaleType="centerInside"
-        android:background="#00ff0000"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/AHos_info"
-        app:srcCompat="@drawable/insurance" />
+                <TextView
+                    android:id="@+id/A_info"
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:text="반려동물정보등록"
+                    android:textAlignment="center"
+                    android:textSize="22sp"
+                    tools:text="반려동물정보등록" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="50dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/i_aHos_info"
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
+                    android:background="#00ff0000"
+                    android:scaleType="centerInside"
+                    app:srcCompat="@drawable/insurance" />
+
+                <TextView
+                    android:id="@+id/OLHos_info"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginTop="10dp"
+                    android:text="우리 지역 동물 병원 정보 찾기"
+                    android:textAlignment="center"
+                    android:textSize="22sp"
+                    tools:text="우리 지역 동물 병원 정보 찾기" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/i_Pri_info"
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
+                    android:background="#00ff0000"
+                    android:scaleType="centerInside"
+                    app:srcCompat="@drawable/metal_gear" />
+
+                <TextView
+                    android:id="@+id/Pri_info"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginTop="10dp"
+                    android:text="개인정보 확인"
+                    android:textAlignment="center"
+                    android:textSize="22sp"
+                    tools:text="개인정보 확인" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

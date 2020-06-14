@@ -4,56 +4,67 @@
     android:layout_height="match_parent">
 
     <Button
-        android:id="@+id/button5"
-        android:layout_width="match_parent"
+        android:id="@+id/list_regis_anihos"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
         android:background="#00ff0000"
         android:text="등록한 동물 병원 정보 목록"
         android:textAlignment="viewStart"
-        android:textSize="18sp"/>
+        android:textSize="20sp" />
 
     <View
         android:id="@+id/divider"
         android:layout_width="match_parent"
         android:layout_height="2dp"
-        android:background="?android:attr/listDivider"/>
+        android:layout_marginTop="10dp"
+        android:background="?android:attr/listDivider" />
 
     <Button
-        android:id="@+id/button6"
-        android:layout_width="match_parent"
+        android:id="@+id/list_regis_animal"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
         android:background="#00ff0000"
         android:text="등록한 반려동물 정보 목록"
         android:textAlignment="viewStart"
-        android:textSize="18sp"/>
+        android:textSize="20sp" />
 
     <View
         android:id="@+id/divider2"
         android:layout_width="match_parent"
         android:layout_height="2dp"
+        android:layout_marginTop="10dp"
         android:background="?android:attr/listDivider" />
 
     <Button
-        android:id="@+id/button7"
-        android:layout_width="match_parent"
+        android:id="@+id/list_regis_opinion"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
         android:background="#00ff0000"
         android:text="등록한 의견 목록"
         android:textAlignment="viewStart"
-        android:textSize="18sp" />
+        android:textSize="20sp" />
 
     <View
         android:id="@+id/divider3"
         android:layout_width="match_parent"
         android:layout_height="2dp"
+        android:layout_marginTop="10dp"
         android:background="?android:attr/listDivider" />
 
     <Button
-        android:id="@+id/button8"
-        android:layout_width="match_parent"
+        android:id="@+id/regis_area"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
         android:background="#00ff0000"
         android:text="거주지 등록"
         android:textAlignment="viewStart"
-        android:textSize="18sp" />
+        android:textSize="20sp" />
 </LinearLayout>

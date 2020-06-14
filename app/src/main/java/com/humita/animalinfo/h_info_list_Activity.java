@@ -15,4 +15,8 @@ public class h_info_list_Activity extends AppCompatActivity {
         setContentView(R.layout.h_info_list);
 
     }
+
+    public class Hospital_list{
+
+    }
 }
