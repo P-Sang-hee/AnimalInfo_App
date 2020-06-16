@@ -1,3 +1,5 @@
+// 반려동물 정보 등록 화면 액티비티
+
 package com.humita.animalinfo;
 
 import android.content.ContentResolver;

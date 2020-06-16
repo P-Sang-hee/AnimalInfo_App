@@ -1,3 +1,5 @@
+// 동불 병원 정보 리스트 화면 액티비티
+
 package com.humita.animalinfo;
 
 import android.content.Intent;

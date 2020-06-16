@@ -1,3 +1,5 @@
+// 등록한 정보 확인 및 거주지 등록 화면 액티비티
+
 package com.humita.animalinfo;
 
 import android.content.Intent;

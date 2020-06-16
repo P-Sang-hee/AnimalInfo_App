@@ -39,5 +39,5 @@ L
 .idea/codeStyles/Project.xml,6\e\6ecd6000a7b6f4a2884412ff19f74193ed089648
 S
 #.idea/sonarlint/issuestore/index.pb,9\f\9fe84ebb15faf917b7def6236dba604453cc61e0
-Q
-!app/src/main/res/values/array.xml,6\8\68e8648bf36e35d7bac78acfa799d4aa21beb246
+W
+'app/src/main/res/layout/h_info_list.xml,7\e\7edd9544867b0485b28b6c083a6a0e904826f1b4

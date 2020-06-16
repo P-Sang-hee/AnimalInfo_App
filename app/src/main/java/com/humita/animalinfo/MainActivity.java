@@ -1,3 +1,5 @@
+// 메인 화면 액티비티
+
 package com.humita.animalinfo;
 
 import androidx.annotation.Nullable;

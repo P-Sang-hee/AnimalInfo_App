@@ -1,3 +1,5 @@
+// 병원 정보 등록 및 공유 화면 액티비티
+
 package com.humita.animalinfo;
 
 import android.content.DialogInterface;
@@ -6,6 +8,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
+
+import com.humita.animalinfo.R;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
@@ -34,8 +38,6 @@ public class h_info_Activity extends AppCompatActivity {
                 showSaveMessage();
             }
         });
-
-
         ShareB.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -69,21 +71,24 @@ public class h_info_Activity extends AppCompatActivity {
         AlertDialog savedialog = builder.create();
         savedialog.show();
     }
-// 공유 기능 (공유하시겠습니까? 묻고, 지역 선택 창 제작. 현재는 임시로 저장 화면과 동일하게 구현.)
+
     private void showShareMessage(){
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle("공유");
         builder.setMessage("공유하시겠습니까?");
+        builder.setMessage("해당 병원이 위치한 지역을 선택하여 주십시오.");
         builder.setIcon(android.R.drawable.ic_dialog_alert);
 
-        builder.setPositiveButton("예", new DialogInterface.OnClickListener() {
+        //지역 선택 spinner 추가.
+
+        builder.setPositiveButton("공유", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 Toast.makeText(getApplicationContext(), "공유되었습니다.", Toast.LENGTH_LONG).show();
             }
         });
 
-        builder.setNeutralButton("아니오", new DialogInterface.OnClickListener() {
+        builder.setNeutralButton("취소", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 Toast.makeText(getApplicationContext(), "취소되었습니다.", Toast.LENGTH_LONG).show();
