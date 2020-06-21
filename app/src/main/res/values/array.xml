@@ -15,11 +15,11 @@
         <item>중성화 불가능</item>
     </string-array>
 
-    <stringarray name="local_1">
-        <!--지역 시/도 리스트-->
-    </stringarray>
+<!--    <stringarray name="local_1">-->
+<!--        &lt;!&ndash;지역 시/도 리스트&ndash;&gt;-->
+<!--    </stringarray>-->
 
-    <stringarray name="local_2">
-        <!--지역 시/군/구 리스트-->
-    </stringarray>
+<!--    <stringarray name="local_2">-->
+<!--        &lt;!&ndash;지역 시/군/구 리스트&ndash;&gt;-->
+<!--    </stringarray>-->
 </resources>

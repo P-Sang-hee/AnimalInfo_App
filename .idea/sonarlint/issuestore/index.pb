@@ -41,3 +41,7 @@ S
 #.idea/sonarlint/issuestore/index.pb,9\f\9fe84ebb15faf917b7def6236dba604453cc61e0
 W
 'app/src/main/res/layout/h_info_list.xml,7\e\7edd9544867b0485b28b6c083a6a0e904826f1b4
+i
+9app/src/main/java/com/humita/animalinfo/QuaryManager.java,c\d\cd3ffdaae05ff50d551271ccb6c83ea51fe98c61
+k
+;app/src/main/java/com/humita/animalinfo/DatabaseHelper.java,f\3\f3008011ab0a7bd14debd47d0559a190cc52351e

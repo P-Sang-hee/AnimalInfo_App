@@ -9,6 +9,7 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.Environment;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -75,6 +76,7 @@ public class a_info_Activity extends AppCompatActivity {
 
                 try {
                     InputStream is1 = r1.openInputStream(fileUri);
+
                     Bitmap iB1 = BitmapFactory.decodeStream(is1);
                     aimgV.setImageBitmap(iB1);
 

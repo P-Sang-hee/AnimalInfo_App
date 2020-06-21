@@ -4,6 +4,7 @@ package com.humita.animalinfo;
 
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -15,6 +16,9 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class h_info_Activity extends AppCompatActivity {
+
+    SQLiteDatabase hos_database;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -55,6 +59,8 @@ public class h_info_Activity extends AppCompatActivity {
         builder.setPositiveButton("저장", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
+
+
                 Toast.makeText(getApplicationContext(), "저장되었습니다.", Toast.LENGTH_LONG).show();
             }
             // 필수 작성란이 비어있을 경우, 공란이 존재합니다 토스트 메세지 띄우는 부분 구현.
@@ -98,4 +104,5 @@ public class h_info_Activity extends AppCompatActivity {
         AlertDialog savedialog = builder.create();
         savedialog.show();
     }
+
 }
