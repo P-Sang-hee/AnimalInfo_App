@@ -1,4 +1,4 @@
-// 병원 정보 등록 및 공유 화면 액티비티
+// 병원 정보 등록 및 공유 화면 액티비티.
 
 package com.humita.animalinfo;
 
@@ -59,7 +59,6 @@ public class h_info_Activity extends AppCompatActivity {
         builder.setPositiveButton("저장", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
-
 
                 Toast.makeText(getApplicationContext(), "저장되었습니다.", Toast.LENGTH_LONG).show();
             }

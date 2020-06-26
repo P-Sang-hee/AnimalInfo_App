@@ -1,4 +1,4 @@
-// 메인 화면 액티비티
+// 메인 화면 액티비티.
 
 package com.humita.animalinfo;
 
